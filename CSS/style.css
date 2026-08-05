@@ -1877,13 +1877,70 @@ footer{
 }
 
 .footer-grid{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
 
     display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+    gap:40px;
 
-    grid-template-columns:2fr 1fr 1fr 1fr;
+    align-items:start;
+}
+.site-footer{
+    background:#111;
+    color:#fff;
+    padding:70px 0 0;
+}
 
-    gap:50px;
+.footer-grid > div{
+    min-width:0;
+}
 
+.footer-logo{
+    width:150px;
+    margin-bottom:22px;
+}
+
+.footer-grid h3{
+    margin-bottom:22px;
+    font-size:18px;
+}
+
+.footer-grid p,
+.footer-grid li{
+    font-size:15px;
+    line-height:1.8;
+}
+
+.footer-grid ul{
+    padding:0;
+}
+
+.footer-grid li{
+    margin-bottom:10px;
+}
+
+.footer-grid a{
+    color:rgba(255,255,255,.85);
+}
+
+.footer-grid a:hover{
+    color:#fff;
+}
+
+.footer-grid i{
+    color:var(--secondary);
+    width:22px;
+    margin-right:8px;
+}
+
+.footer-bottom{
+    margin-top:45px;
+    padding:22px 20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.12);
+    font-size:14px;
 }
 
 .footer-logo{
@@ -2175,21 +2232,27 @@ footer a:hover{
 
     }
 
-    .footer-grid{
+.footer-grid{
+    grid-template-columns:1fr;
+    text-align:left;
+}
 
-        grid-template-columns:1fr;
+footer p{
+    justify-content:flex-start;
+}
 
-        text-align:center;
+.social-links{
+    justify-content:flex-start;
+}
 
-    }
+}
+footer p{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+}
 
-    .social-links{
-
-        justify-content:center;
-
-    }
-
-}/* ==========================================
+/* ==========================================
    SMALL PHONES
 ========================================== */
 
@@ -3194,6 +3257,11 @@ footer a:hover{
     background-repeat: no-repeat;
     padding: 50px 0; /* keeps spacing nice */
     color: #fff; /* optional: makes text readable on dark images */
+}
+footer p{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
 }
 footer {
     background-image: url('images/footer-bg.jpg');
