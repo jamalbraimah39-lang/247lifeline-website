@@ -467,9 +467,19 @@ header{
 
 #why-us {
 
-    padding: 100px 0;
+    padding:100px 0;
 
-    background: white;
+    background-image:
+        linear-gradient(
+            rgba(0,86,166,.82),
+            rgba(0,86,166,.82)
+        ),
+        url("../Images/hero5.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 
 }
 
@@ -781,7 +791,17 @@ footer {
 
     padding:100px 0;
 
-    background:white;
+    background-image:
+        linear-gradient(
+            rgba(0,86,166,.82),
+            rgba(0,86,166,.82)
+        ),
+        url("../Images/hero4.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 
 }
 
@@ -3392,6 +3412,17 @@ footer * {
 
     color:#fff;
 
+}
+#why-us .why-card,
+#process .process-card{
+    background:#fff;
+}
+
+#why-us .section-title,
+#why-us .section-subtitle,
+#process .section-title,
+#process .section-subtitle{
+    color:#fff;
 }
 .fixed-background-section h2{
 
