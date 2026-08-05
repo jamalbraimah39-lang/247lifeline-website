@@ -1195,21 +1195,50 @@ footer {
 
 #cta{
 
-    padding:100px 0;
+    position:relative;
 
-    background:var(--primary);
+    overflow:hidden;
+
+    padding:120px 0;
+
+    background-image:
+        linear-gradient(
+            rgba(0,86,166,.82),
+            rgba(0,86,166,.82)
+        ),
+        url("../Images/hero2.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
 
 }
 
 .cta-box{
 
+    max-width:900px;
+
+    margin:auto;
+
     text-align:center;
 
     color:white;
 
-    max-width:900px;
+    padding:70px 60px;
 
-    margin:auto;
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.20);
 
 }
 
