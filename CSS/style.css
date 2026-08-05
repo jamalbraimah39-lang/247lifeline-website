@@ -3350,25 +3350,48 @@ footer * {
 }
 .fixed-background-section{
 
-    position: relative;
+    position:relative;
 
-    background:
+    background-image:
         linear-gradient(
             rgba(0,86,166,.82),
             rgba(0,86,166,.82)
         ),
-        url("../Images/hero2.jpg");
+        url("../Images/hero.jpg");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 
-    padding: 140px 0;
+    color:#fff;
 
-    text-align: center;
+    padding:120px 0;
 
-    color: #fff;
+    overflow:hidden;
+}
+
+/* Keep cards white */
+
+.fixed-background-section .service-card,
+.fixed-background-section .why-card,
+.fixed-background-section .process-card,
+.fixed-background-section .job-card,
+.fixed-background-section .stat-card,
+.fixed-background-section .testimonial-card{
+
+    background:#fff;
+    color:#222;
+
+}
+
+/* Keep headings white */
+
+.fixed-background-section .section-title,
+.fixed-background-section .section-subtitle{
+
+    color:#fff;
+
 }
 .fixed-background-section h2{
 
@@ -3447,5 +3470,19 @@ footer * {
 .reveal-card:nth-child(4){
 
     transition-delay:.36s;
+
+}
+#why-us{
+
+    background-image:
+        linear-gradient(rgba(0,86,166,.82),rgba(0,86,166,.82)),
+        url("../Images/why-bg.jpg");
+
+}
+#process{
+
+    background-image:
+        linear-gradient(rgba(0,86,166,.82),rgba(0,86,166,.82)),
+        url("../Images/process-bg.jpg");
 
 }
