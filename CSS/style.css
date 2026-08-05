@@ -161,10 +161,6 @@ header{
 
 }
 
-.nav-links a:hover {
-    color: #0056A6;
-}
-
 .btn{
 
     display:inline-flex;

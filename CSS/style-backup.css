@@ -179,9 +179,7 @@ header{
 
     color:#fff;
 
-    padding:18px 40px;
-
-    letter-spacing:.5px;
+    padding:14px 32px;
 
     min-width:150px;
 
@@ -298,14 +296,6 @@ header{
     color:white;
 
     width:min(90%,800px);
-
-    text-align:center;
-
-    padding:40px;
-    
-    border-radius:25px;
-
-    backdrop-filter:blur(4px);
 
 }
 .hero-content p{
