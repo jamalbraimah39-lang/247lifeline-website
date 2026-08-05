@@ -16,18 +16,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.getElementById("navLinks");
 
     if (!menuToggle || !navLinks) {
+        console.error("Mobile menu button or navigation list was not found.");
         return;
     }
 
     menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-        menuToggle.classList.toggle("active");
+        const isOpen = navLinks.classList.toggle("active");
+
+        menuToggle.classList.toggle("active", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
     navLinks.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
             navLinks.classList.remove("active");
             menuToggle.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
         });
     });
 });
