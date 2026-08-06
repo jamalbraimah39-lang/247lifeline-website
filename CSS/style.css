@@ -3822,7 +3822,7 @@ footer * {
     background-attachment:fixed;
 }
 /* ==========================================
-   ABOUT PAGE FIXED BANNER
+   ABOUT PAGE PARALLAX BANNER
 ========================================== */
 
 .page-banner.about-fixed-banner{
@@ -3840,11 +3840,9 @@ footer * {
         url("../Images/about.jpg");
 
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
 }
-
 @media (max-width:768px){
     .page-banner.about-fixed-banner{
         background-attachment:fixed;

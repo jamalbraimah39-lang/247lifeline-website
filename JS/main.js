@@ -35,3 +35,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutBanner = document.querySelector(".about-fixed-banner");
+
+    if (!aboutBanner) {
+        return;
+    }
+
+    function updateAboutParallax() {
+        const bannerPosition = aboutBanner.getBoundingClientRect();
+        const movement = bannerPosition.top * 0.25;
+
+        aboutBanner.style.backgroundPosition =
+            "center calc(50% + " + movement + "px)";
+    }
+
+    updateAboutParallax();
+
+    window.addEventListener("scroll", updateAboutParallax, {
+        passive: true
+    });
+});
