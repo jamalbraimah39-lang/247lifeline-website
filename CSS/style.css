@@ -3808,3 +3808,16 @@ footer * {
         transform: translateY(0) scale(1);
     }
 }
+.about-fixed-banner{
+    background-image:
+        linear-gradient(
+            rgba(0,86,166,.82),
+            rgba(0,86,166,.82)
+        ),
+        url("../Images/about.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
