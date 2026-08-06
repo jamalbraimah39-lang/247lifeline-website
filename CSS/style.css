@@ -3826,10 +3826,16 @@ footer * {
 ========================================== */
 
 .page-banner.about-fixed-banner{
-    background:
+    min-height:420px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background-image:
         linear-gradient(
-            rgba(0,86,166,.72)
-            rgba(0,86,166,.72)
+            rgba(0,86,166,.68),
+            rgba(0,86,166,.68)
         ),
         url("../Images/about.jpg");
 
