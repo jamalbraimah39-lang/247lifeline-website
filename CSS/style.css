@@ -3825,34 +3825,11 @@ footer * {
    ABOUT PAGE FIXED BANNER
 ========================================== */
 
-.about-fixed-banner{
-    background-image:
-        linear-gradient(
-            rgba(0,86,166,.82),
-            rgba(0,86,166,.82)
-        ),
-        url("../Images/about.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-}
-
-@media (max-width:768px){
-    .about-fixed-banner{
-        background-attachment:fixed;
-    }
-}
-/* ==========================================
-   ABOUT PAGE FIXED BANNER
-========================================== */
-
 .page-banner.about-fixed-banner{
     background:
         linear-gradient(
-            rgba(0,86,166,.82),
-            rgba(0,86,166,.82)
+            rgba(0,86,166,.72)
+            rgba(0,86,166,.72)
         ),
         url("../Images/about.jpg");
 
