@@ -3841,10 +3841,12 @@ footer * {
 
 @media (max-width:768px){
     .about-fixed-banner{
-        background-attachment:scroll;
+        background-attachment:fixed;
     }
 }
-/* ABOUT PAGE STATIC BANNER */
+/* ==========================================
+   ABOUT PAGE FIXED BANNER
+========================================== */
 
 .page-banner.about-fixed-banner{
     background:
@@ -3862,6 +3864,6 @@ footer * {
 
 @media (max-width:768px){
     .page-banner.about-fixed-banner{
-        background-attachment:scroll;
+        background-attachment:fixed;
     }
 }
