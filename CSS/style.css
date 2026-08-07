@@ -4337,6 +4337,49 @@ body {
         font-size:27px;
     }
 }
+/* Static background - Healthcare Professionals */
+
+#professionals{
+    position:relative;
+    background:
+        linear-gradient(
+            rgba(255,255,255,.88),
+            rgba(255,255,255,.88)
+        ),
+        url("../Images/hero6.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+#professionals .container{
+    position:relative;
+    z-index:2;
+}
+
+/* Keep the cards readable over the image */
+
+#professionals .professional-card{
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+}
+
+/* Phones/tablets */
+
+@media (max-width:768px){
+
+    #professionals{
+        background-attachment:scroll;
+        background-position:center;
+    }
+
+    #professionals .professional-card{
+        background:rgba(255,255,255,.95);
+    }
+}
 /* ==========================================
    SERVICES - WHY PARTNER WITH US
 ========================================== */
@@ -4399,6 +4442,41 @@ body {
     #partner-benefits .benefit-card{
         min-height:auto;
         padding:30px 24px;
+    }
+}
+/* Static background - Why Partner With Us */
+
+#partner-benefits{
+    position:relative;
+
+    background:
+        linear-gradient(
+            rgba(0,86,166,.84),
+            rgba(0,86,166,.84)
+        ),
+        url("../Images/hero5.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+#partner-benefits .section-title,
+#partner-benefits .section-subtitle{
+    color:#fff;
+}
+
+#partner-benefits .benefit-card{
+    background:#fff;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    #partner-benefits{
+        background-attachment:scroll;
     }
 }
 /* ==========================================
