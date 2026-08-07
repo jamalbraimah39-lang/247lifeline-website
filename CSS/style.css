@@ -3867,3 +3867,13 @@ footer * {
     background-repeat:no-repeat;
     background-attachment:fixed;
 }
+#mission-vision > .container > .section-title{
+    color:#fff;
+    text-shadow:0 2px 8px rgba(0,0,0,.45);
+}
+
+#mission-vision > .container > .section-subtitle{
+    color:#fff;
+    font-weight:500;
+    text-shadow:0 2px 8px rgba(0,0,0,.55);
+}
