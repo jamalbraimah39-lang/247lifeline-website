@@ -66,13 +66,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!slider || !firstGroup) return;
 
-    let autoScroll = true;
-    let isInteracting = false;
+    let isPaused = false;
     let resumeTimer;
 
     function moveLogos() {
 
-        if (autoScroll && !isInteracting) {
+        if (!isPaused) {
             slider.scrollLeft += 0.7;
         }
 
@@ -82,67 +81,61 @@ document.addEventListener("DOMContentLoaded", function () {
             slider.scrollLeft -= groupWidth;
         }
 
-        if (slider.scrollLeft < 0) {
-            slider.scrollLeft += groupWidth;
-        }
-
         requestAnimationFrame(moveLogos);
     }
 
-    function stopAutomaticMovement() {
-        isInteracting = true;
-        autoScroll = false;
-
+    function pauseSlider() {
+        isPaused = true;
         clearTimeout(resumeTimer);
     }
 
-    function resumeAutomaticMovement() {
-        isInteracting = false;
-
+    function resumeSlider() {
         clearTimeout(resumeTimer);
 
         resumeTimer = setTimeout(function () {
-            autoScroll = true;
+            isPaused = false;
         }, 1200);
     }
 
-    slider.addEventListener("touchstart", stopAutomaticMovement, {
-        passive:true
+    slider.addEventListener("touchstart", pauseSlider, {
+        passive: true
     });
 
-    slider.addEventListener("touchend", resumeAutomaticMovement, {
-        passive:true
+    slider.addEventListener("touchend", resumeSlider, {
+        passive: true
     });
 
-    slider.addEventListener("pointerdown", stopAutomaticMovement);
+    slider.addEventListener("touchcancel", resumeSlider, {
+        passive: true
+    });
 
-    window.addEventListener("pointerup", resumeAutomaticMovement);
+    slider.addEventListener("pointerdown", pauseSlider);
+
+    window.addEventListener("pointerup", resumeSlider);
 
     if (rightArrow) {
         rightArrow.addEventListener("click", function () {
-
-            stopAutomaticMovement();
+            pauseSlider();
 
             slider.scrollBy({
                 left:260,
                 behavior:"smooth"
             });
 
-            resumeAutomaticMovement();
+            resumeSlider();
         });
     }
 
     if (leftArrow) {
         leftArrow.addEventListener("click", function () {
-
-            stopAutomaticMovement();
+            pauseSlider();
 
             slider.scrollBy({
                 left:-260,
                 behavior:"smooth"
             });
 
-            resumeAutomaticMovement();
+            resumeSlider();
         });
     }
 
