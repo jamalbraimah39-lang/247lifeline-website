@@ -3977,3 +3977,57 @@ footer * {
     font-weight:500;
     text-shadow:0 2px 8px rgba(0,0,0,.55);
 }
+@media (max-width:576px){
+
+    .affiliation-slider-wrapper{
+        position:relative;
+        width:100%;
+        padding:0 48px;
+    }
+
+    .affiliation-slider{
+        width:100%;
+        overflow-x:auto;
+        overflow-y:hidden;
+    }
+
+    .affiliation-track{
+        display:flex;
+        align-items:center;
+    }
+
+    .affiliation-group{
+        display:flex;
+        gap:16px;
+        padding-right:16px;
+        flex-shrink:0;
+    }
+
+    .affiliation-card{
+        flex:0 0 calc(100vw - 140px);
+        max-width:280px;
+        min-height:130px;
+        padding:24px;
+    }
+
+    .affiliation-card img{
+        max-width:150px;
+        max-height:75px;
+        object-fit:contain;
+    }
+
+    .affiliation-arrow{
+        width:40px;
+        height:40px;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    .affiliation-arrow-left{
+        left:2px;
+    }
+
+    .affiliation-arrow-right{
+        right:2px;
+    }
+}
