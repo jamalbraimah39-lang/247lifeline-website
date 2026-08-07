@@ -4078,3 +4078,189 @@ body {
         overflow: hidden;
     }
 }
+/* ==========================================
+   SERVICES INTRO
+========================================== */
+
+#services-intro{
+    background:#fff;
+}
+
+#services-intro .about-container{
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+#services-intro .about-text{
+    max-width:620px;
+}
+
+#services-intro .about-text h2{
+    font-size:clamp(2.4rem,4vw,3.4rem);
+    line-height:1.15;
+    color:var(--primary);
+    margin-bottom:24px;
+}
+
+#services-intro .about-text p{
+    font-size:17px;
+    line-height:1.9;
+    color:var(--text);
+    margin-bottom:20px;
+}
+
+#services-intro .about-image img{
+    width:100%;
+    min-height:460px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+@media (max-width:768px){
+
+    #services-intro .about-container{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    #services-intro .about-text{
+        max-width:none;
+    }
+
+    #services-intro .about-image img{
+        min-height:300px;
+    }
+
+    #services-intro .btn{
+        width:auto;
+    }
+}#services-intro{
+    background:#fff;
+}
+
+#services-intro .about-container{
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+#services-intro .about-text{
+    max-width:620px;
+}
+
+#services-intro .about-text h2{
+    font-size:clamp(2.4rem,4vw,3.4rem);
+    line-height:1.15;
+    color:var(--primary);
+    margin-bottom:24px;
+}
+
+#services-intro .about-text p{
+    font-size:17px;
+    line-height:1.9;
+    color:var(--text);
+    margin-bottom:20px;
+}
+
+#services-intro .about-image img{
+    width:100%;
+    min-height:460px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+    #services-intro .about-container{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    #services-intro .about-text{
+        max-width:none;
+    }
+
+    #services-intro .about-image img{
+        min-height:300px;
+    }
+
+    #services-intro .btn{
+        width:auto;
+    }
+}
+/* ==========================================
+   SERVICES - RECRUITMENT SOLUTIONS
+========================================== */
+
+#recruitment-services{
+    background:var(--light);
+}
+
+#recruitment-services .services-grid{
+    gap:30px;
+}
+
+#recruitment-services .service-card{
+    min-height:320px;
+    padding:45px 32px;
+    border-radius:18px;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+#recruitment-services .service-icon{
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    background:rgba(0,86,166,.10);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    margin-bottom:24px;
+}
+
+#recruitment-services .service-card h3{
+    font-size:22px;
+    margin-bottom:16px;
+}
+
+#recruitment-services .service-card p{
+    font-size:16px;
+    line-height:1.8;
+    max-width:330px;
+}
+
+#recruitment-services .service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.13);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    #recruitment-services .services-grid{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    #recruitment-services .service-card{
+        min-height:auto;
+        padding:35px 25px;
+    }
+
+    #recruitment-services .service-icon{
+        width:72px;
+        height:72px;
+        font-size:30px;
+    }
+}
