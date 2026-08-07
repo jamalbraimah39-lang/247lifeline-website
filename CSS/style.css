@@ -1810,6 +1810,65 @@ footer {
     scrollbar-width:none;
     cursor:grab;
 }
+.affiliation-slider-wrapper{
+    position:relative;
+    width:100%;
+}
+
+.affiliation-arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:48px;
+    height:48px;
+
+    border:none;
+    border-radius:50%;
+
+    background:var(--primary);
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:18px;
+    cursor:pointer;
+
+    z-index:10;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+
+.affiliation-arrow-left{
+    left:10px;
+}
+
+.affiliation-arrow-right{
+    right:10px;
+}
+
+.affiliation-arrow:hover{
+    background:#003f7d;
+}
+
+@media (max-width:576px){
+
+    .affiliation-arrow{
+        width:40px;
+        height:40px;
+        font-size:15px;
+    }
+
+    .affiliation-arrow-left{
+        left:5px;
+    }
+
+    .affiliation-arrow-right{
+        right:5px;
+    }
+}
 
 .affiliation-slider::-webkit-scrollbar{
     display:none;

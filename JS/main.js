@@ -61,15 +61,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".affiliation-slider");
     const firstGroup = document.querySelector(".affiliation-group");
 
+    const leftArrow = document.querySelector(".affiliation-arrow-left");
+    const rightArrow = document.querySelector(".affiliation-arrow-right");
+
     if (!slider || !firstGroup) return;
 
     let autoScroll = true;
+    let isInteracting = false;
     let resumeTimer;
 
     function moveLogos() {
 
-        if (autoScroll) {
-            slider.scrollLeft += 0.6;
+        if (autoScroll && !isInteracting) {
+            slider.scrollLeft += 0.7;
         }
 
         const groupWidth = firstGroup.offsetWidth;
@@ -78,37 +82,69 @@ document.addEventListener("DOMContentLoaded", function () {
             slider.scrollLeft -= groupWidth;
         }
 
+        if (slider.scrollLeft < 0) {
+            slider.scrollLeft += groupWidth;
+        }
+
         requestAnimationFrame(moveLogos);
     }
 
-    function pauseAutoScroll() {
-
+    function stopAutomaticMovement() {
+        isInteracting = true;
         autoScroll = false;
+
+        clearTimeout(resumeTimer);
+    }
+
+    function resumeAutomaticMovement() {
+        isInteracting = false;
 
         clearTimeout(resumeTimer);
 
         resumeTimer = setTimeout(function () {
-    autoScroll = true;
-}, 4000);
+            autoScroll = true;
+        }, 1200);
     }
-    
-    slider.addEventListener("touchend", pauseAutoScroll, {
-    passive: true
-});
 
-    slider.addEventListener("touchstart", pauseAutoScroll, {
-        passive: true
+    slider.addEventListener("touchstart", stopAutomaticMovement, {
+        passive:true
     });
 
-    slider.addEventListener("touchmove", pauseAutoScroll, {
-        passive: true
+    slider.addEventListener("touchend", resumeAutomaticMovement, {
+        passive:true
     });
 
-    slider.addEventListener("pointerdown", pauseAutoScroll);
+    slider.addEventListener("pointerdown", stopAutomaticMovement);
 
-    slider.addEventListener("wheel", pauseAutoScroll, {
-        passive: true
-    });
+    window.addEventListener("pointerup", resumeAutomaticMovement);
+
+    if (rightArrow) {
+        rightArrow.addEventListener("click", function () {
+
+            stopAutomaticMovement();
+
+            slider.scrollBy({
+                left:260,
+                behavior:"smooth"
+            });
+
+            resumeAutomaticMovement();
+        });
+    }
+
+    if (leftArrow) {
+        leftArrow.addEventListener("click", function () {
+
+            stopAutomaticMovement();
+
+            slider.scrollBy({
+                left:-260,
+                behavior:"smooth"
+            });
+
+            resumeAutomaticMovement();
+        });
+    }
 
     moveLogos();
 
