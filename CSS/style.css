@@ -4264,3 +4264,261 @@ body {
         font-size:30px;
     }
 }
+/* ==========================================
+   SERVICES - HEALTHCARE PROFESSIONALS
+========================================== */
+
+#professionals{
+    background:#fff;
+}
+
+#professionals .professionals-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
+}
+
+#professionals .professional-card{
+    background:var(--light);
+    padding:38px 32px;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+    min-height:300px;
+}
+
+#professionals .professional-icon{
+    width:76px;
+    height:76px;
+    font-size:30px;
+    margin-bottom:22px;
+}
+
+#professionals .professional-card h3{
+    font-size:23px;
+    margin-bottom:18px;
+}
+
+#professionals .professional-card ul{
+    padding-left:0;
+}
+
+#professionals .professional-card li{
+    position:relative;
+    padding-left:24px;
+    margin-bottom:12px;
+    line-height:1.6;
+}
+
+#professionals .professional-card li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:var(--primary);
+    font-weight:700;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    #professionals .professionals-grid{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    #professionals .professional-card{
+        min-height:auto;
+        padding:30px 24px;
+    }
+
+    #professionals .professional-icon{
+        width:68px;
+        height:68px;
+        font-size:27px;
+    }
+}
+/* ==========================================
+   SERVICES - WHY PARTNER WITH US
+========================================== */
+
+#partner-benefits{
+    background:var(--light);
+}
+
+#partner-benefits .benefits-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+#partner-benefits .benefit-card{
+    min-height:260px;
+    padding:38px 28px;
+    border-radius:18px;
+    background:#fff;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+}
+
+#partner-benefits .benefit-card i{
+    font-size:38px;
+    margin-bottom:18px;
+}
+
+#partner-benefits .benefit-card h3{
+    font-size:22px;
+    margin-bottom:14px;
+}
+
+#partner-benefits .benefit-card p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+#partner-benefits .benefit-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #partner-benefits .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    #partner-benefits .benefits-grid{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    #partner-benefits .benefit-card{
+        min-height:auto;
+        padding:30px 24px;
+    }
+}
+/* ==========================================
+   SERVICES - FAQ
+========================================== */
+
+#faq{
+    background:#fff;
+}
+
+#faq .faq-container{
+    max-width:900px;
+    margin:45px auto 0;
+}
+
+#faq .faq-item{
+    margin-bottom:16px;
+    border-radius:14px;
+    overflow:hidden;
+    background:#fff;
+    border:1px solid #e8edf3;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+#faq .faq-question{
+    width:100%;
+    padding:22px 25px;
+
+    border:none;
+    background:#fff;
+    color:var(--dark);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+
+    text-align:left;
+    font-family:inherit;
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+#faq .faq-question:hover{
+    background:#f7faff;
+    color:var(--primary);
+}
+
+#faq .faq-question span{
+    flex:0 0 38px;
+    width:38px;
+    height:38px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    background:rgba(0,86,166,.10);
+    color:var(--primary);
+
+    font-size:24px;
+    line-height:1;
+    transition:.3s;
+}
+
+#faq .faq-answer{
+    max-height:0;
+    overflow:hidden;
+    background:#fff;
+    transition:max-height .4s ease;
+}
+
+#faq .faq-answer p{
+    padding:0 25px 24px;
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* When FAQ is open */
+
+#faq .faq-item.active .faq-answer{
+    max-height:300px;
+}
+
+#faq .faq-item.active .faq-question{
+    color:var(--primary);
+}
+
+#faq .faq-item.active .faq-question span{
+    transform:rotate(45deg);
+    background:var(--primary);
+    color:#fff;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    #faq .faq-container{
+        margin-top:35px;
+    }
+
+    #faq .faq-question{
+        padding:18px 18px;
+        font-size:16px;
+        gap:14px;
+    }
+
+    #faq .faq-question span{
+        flex-basis:34px;
+        width:34px;
+        height:34px;
+        font-size:21px;
+    }
+
+    #faq .faq-answer p{
+        padding:0 18px 20px;
+        font-size:15px;
+    }
+}
