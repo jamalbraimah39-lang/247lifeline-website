@@ -88,9 +88,13 @@ document.addEventListener("DOMContentLoaded", function () {
         clearTimeout(resumeTimer);
 
         resumeTimer = setTimeout(function () {
-            autoScroll = true;
-        }, 1500);
+    autoScroll = true;
+}, 4000);
     }
+    
+    slider.addEventListener("touchend", pauseAutoScroll, {
+    passive: true
+});
 
     slider.addEventListener("touchstart", pauseAutoScroll, {
         passive: true
