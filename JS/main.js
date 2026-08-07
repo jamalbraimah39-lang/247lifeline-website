@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function moveLogos() {
 
         if (!isPaused) {
-            slider.scrollLeft += 0.7;
+            slider.scrollLeft += 1;
         }
 
         const groupWidth = firstGroup.offsetWidth;
