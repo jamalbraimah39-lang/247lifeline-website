@@ -1793,37 +1793,44 @@ footer {
 
 }
 /* ==========================================
-   INDUSTRY AFFILIATIONS
+   INFINITE AFFILIATION LOGO SLIDER
 ========================================== */
-
-#affiliations{
-
-    padding:100px 0;
-
-    background:white;
-
-}
-
-.affiliation-grid{
-    display:flex;
-    gap:40px;
-    width:max-content;
-    margin-top:35px;
-    animation:affiliationScroll 24s linear infinite;
-}
 
 #affiliations{
     overflow:hidden;
 }
 
+.affiliation-slider{
+    width:100%;
+    overflow:hidden;
+    margin-top:35px;
+}
+
+.affiliation-track{
+    display:flex;
+    width:max-content;
+    animation:affiliationMarquee 20s linear infinite;
+}
+
+.affiliation-group{
+    display:flex;
+    gap:40px;
+    padding-right:40px;
+    flex-shrink:0;
+}
+
 .affiliation-card{
     flex:0 0 320px;
+    min-height:155px;
+
     background:var(--light);
     border-radius:15px;
     padding:40px;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
@@ -1833,13 +1840,13 @@ footer {
     object-fit:contain;
 }
 
-@keyframes affiliationScroll{
+@keyframes affiliationMarquee{
     from{
         transform:translateX(0);
     }
 
     to{
-        transform:translateX(calc(-50% - 20px));
+        transform:translateX(-50%);
     }
 }
 /* ==========================================
@@ -2203,15 +2210,14 @@ footer a:hover{
     }
 
     .services-grid,
-    .why-grid,
-    .jobs-grid,
-    .stats-grid,
-    .values-grid,
-    .trust-grid,
-    .affiliation-grid,
-    .mission-grid{
-        grid-template-columns:1fr;
-    }
+.why-grid,
+.jobs-grid,
+.stats-grid,
+.values-grid,
+.trust-grid,
+.mission-grid{
+    grid-template-columns:1fr;
+}
 
     .footer-grid{
         grid-template-columns:1fr;
