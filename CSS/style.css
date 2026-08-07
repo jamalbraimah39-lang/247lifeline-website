@@ -1809,7 +1809,7 @@ footer {
 .affiliation-track{
     display:flex;
     width:max-content;
-    animation:affiliationMarquee 20s linear infinite;
+    animation:affiliationMarquee 24s linear infinite;
 }
 
 .affiliation-group{
@@ -1846,7 +1846,7 @@ footer {
     }
 
     to{
-        transform:translateX(-50%);
+        transform:translateX(-25%);
     }
 }
 /* ==========================================
