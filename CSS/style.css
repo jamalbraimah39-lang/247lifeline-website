@@ -1793,7 +1793,7 @@ footer {
 
 }
 /* ==========================================
-   INFINITE AFFILIATION LOGO SLIDER
+   RESPONSIVE SWIPEABLE AFFILIATION SLIDER
 ========================================== */
 
 #affiliations{
@@ -1802,14 +1802,28 @@ footer {
 
 .affiliation-slider{
     width:100%;
-    overflow:hidden;
+    overflow-x:auto;
+    overflow-y:hidden;
     margin-top:35px;
+
+    -webkit-overflow-scrolling:touch;
+    scroll-behavior:auto;
+    scrollbar-width:none;
+    touch-action:pan-x;
+    cursor:grab;
+}
+
+.affiliation-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.affiliation-slider:active{
+    cursor:grabbing;
 }
 
 .affiliation-track{
     display:flex;
     width:max-content;
-    animation:affiliationMarquee 24s linear infinite;
 }
 
 .affiliation-group{
@@ -1840,13 +1854,44 @@ footer {
     object-fit:contain;
 }
 
-@keyframes affiliationMarquee{
-    from{
-        transform:translateX(0);
+/* TABLET */
+
+@media (max-width:992px){
+
+    .affiliation-card{
+        flex-basis:270px;
+        min-height:145px;
+        padding:30px;
     }
 
-    to{
-        transform:translateX(-25%);
+    .affiliation-group{
+        gap:25px;
+        padding-right:25px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    .affiliation-slider{
+        margin-top:25px;
+    }
+
+    .affiliation-card{
+        flex-basis:220px;
+        min-height:125px;
+        padding:25px;
+    }
+
+    .affiliation-card img{
+        max-width:150px;
+        max-height:75px;
+    }
+
+    .affiliation-group{
+        gap:18px;
+        padding-right:18px;
     }
 }
 /* ==========================================

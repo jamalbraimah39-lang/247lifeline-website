@@ -56,3 +56,56 @@ document.addEventListener("DOMContentLoaded", function () {
         passive: true
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slider = document.querySelector(".affiliation-slider");
+    const firstGroup = document.querySelector(".affiliation-group");
+
+    if (!slider || !firstGroup) return;
+
+    let autoScroll = true;
+    let resumeTimer;
+
+    function moveLogos() {
+
+        if (autoScroll) {
+            slider.scrollLeft += 0.6;
+        }
+
+        const groupWidth = firstGroup.offsetWidth;
+
+        if (slider.scrollLeft >= groupWidth) {
+            slider.scrollLeft -= groupWidth;
+        }
+
+        requestAnimationFrame(moveLogos);
+    }
+
+    function pauseAutoScroll() {
+
+        autoScroll = false;
+
+        clearTimeout(resumeTimer);
+
+        resumeTimer = setTimeout(function () {
+            autoScroll = true;
+        }, 1500);
+    }
+
+    slider.addEventListener("touchstart", pauseAutoScroll, {
+        passive: true
+    });
+
+    slider.addEventListener("touchmove", pauseAutoScroll, {
+        passive: true
+    });
+
+    slider.addEventListener("pointerdown", pauseAutoScroll);
+
+    slider.addEventListener("wheel", pauseAutoScroll, {
+        passive: true
+    });
+
+    moveLogos();
+
+});
