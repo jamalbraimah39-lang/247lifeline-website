@@ -3834,7 +3834,7 @@ footer * {
 
     background-image:
         linear-gradient(
-            rgba(0,86,166,.68),
+            rgba(0,86,166,.68), 
             rgba(0,86,166,.68)
         ),
         url("../Images/hero2.jpg");
