@@ -1809,7 +1809,7 @@ footer {
     gap:40px;
     width:max-content;
     margin-top:35px;
-    animation:affiliationScroll 18s linear infinite;
+    animation:affiliationScroll 24s linear infinite;
 }
 
 #affiliations{
@@ -1839,7 +1839,7 @@ footer {
     }
 
     to{
-        transform:translateX(-50%);
+        transform:translateX(calc(-50% - 20px));
     }
 }
 /* ==========================================
