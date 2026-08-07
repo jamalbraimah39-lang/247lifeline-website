@@ -1805,52 +1805,44 @@ footer {
 }
 
 .affiliation-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
+    display:flex;
     gap:40px;
-
+    width:max-content;
     margin-top:35px;
+    animation:affiliationScroll 18s linear infinite;
+}
 
+#affiliations{
+    overflow:hidden;
 }
 
 .affiliation-card{
-
+    flex:0 0 320px;
     background:var(--light);
-
     border-radius:15px;
-
     padding:40px;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    transition:.3s;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-.affiliation-card:hover{
-
-    transform:translateY(-8px);
-
 }
 
 .affiliation-card img{
-
     max-width:180px;
-
     max-height:90px;
-
     object-fit:contain;
+}
 
-}/* ==========================================
+@keyframes affiliationScroll{
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+}
+/* ==========================================
    ABOUT CTA
 ========================================== */
 
