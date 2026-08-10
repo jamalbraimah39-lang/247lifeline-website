@@ -5609,3 +5609,57 @@ body {
     }
 
 }
+/* ==========================================
+   JOBS - WHERE YOU'LL WORK BACKGROUND
+========================================== */
+
+#work-settings{
+    position:relative;
+
+    background:
+        linear-gradient(
+            rgba(0, 60, 110, 0.88),
+            rgba(0, 86, 166, 0.84)
+        ),
+        url("../Images/hero2.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    padding:100px 0;
+}
+
+/* Keep heading readable */
+
+#work-settings .section-title{
+    color:#fff;
+}
+
+#work-settings .section-subtitle{
+    color:rgba(255,255,255,.92);
+}
+
+/* Cards remain bright above the background */
+
+#work-settings .setting-card{
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(4px);
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    #work-settings{
+        padding:70px 0;
+
+        /*
+        Fixed backgrounds can behave badly on iPhone/Safari.
+        Keep the image static instead.
+        */
+        background-attachment:scroll;
+        background-position:center;
+    }
+}
