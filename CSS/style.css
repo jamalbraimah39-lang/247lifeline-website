@@ -5551,3 +5551,61 @@ body {
         padding:0 10px;
     }
 }
+/* ==========================================
+   JOBS - FINAL MOBILE SPACING POLISH
+========================================== */
+
+@media (max-width:576px){
+
+    /* Reduce space after the search area */
+    #job-search{
+        padding-bottom:30px;
+    }
+
+    #featured-jobs{
+        padding-top:40px;
+    }
+
+    /* Compact vacancy toolbar */
+    #featured-jobs .jobs-toolbar{
+        padding:16px;
+        gap:14px;
+        margin-bottom:25px;
+    }
+
+    #featured-jobs .jobs-count strong{
+        font-size:22px;
+    }
+
+    #featured-jobs #resultsText{
+        font-size:13px;
+    }
+
+    /* Compact job cards */
+    #featured-jobs .job-card{
+        padding:22px 20px;
+        border-radius:16px;
+    }
+
+    #featured-jobs .job-type{
+        margin-bottom:14px;
+    }
+
+    #featured-jobs .job-card h3{
+        font-size:19px;
+        line-height:1.35;
+        margin-bottom:14px;
+        overflow-wrap:anywhere;
+    }
+
+    #featured-jobs .job-card p{
+        margin:5px 0;
+        line-height:1.5;
+    }
+
+    #featured-jobs .job-card .btn{
+        margin-top:14px;
+        padding:13px 18px;
+    }
+
+}
