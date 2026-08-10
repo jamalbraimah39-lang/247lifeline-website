@@ -5248,3 +5248,257 @@ body {
         padding:30px 24px;
     }
 }
+/* ==========================================
+   JOBS - WHERE YOU'LL WORK
+========================================== */
+
+#work-settings{
+    padding:100px 0;
+    background:#fff;
+}
+
+#work-settings .settings-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+#work-settings .setting-card{
+    min-height:260px;
+    padding:36px 26px;
+
+    background:#f8f9fa;
+    border-radius:18px;
+
+    text-align:center;
+
+    border:1px solid #e8edf3;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+}
+
+#work-settings .setting-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.11);
+}
+
+#work-settings .setting-card i{
+    font-size:42px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+#work-settings .setting-card h3{
+    color:var(--primary);
+    font-size:21px;
+    margin-bottom:14px;
+}
+
+#work-settings .setting-card p{
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #work-settings .settings-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #work-settings{
+        padding:70px 0;
+    }
+
+    #work-settings .settings-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    #work-settings .setting-card{
+        min-height:auto;
+        padding:30px 24px;
+    }
+}
+/* ==========================================
+   JOBS - YOUR JOURNEY
+========================================== */
+
+#job-process{
+    padding:100px 0;
+    background:#f8f9fa;
+}
+
+#job-process .process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+#job-process .process-step{
+    position:relative;
+    min-height:280px;
+    padding:38px 26px;
+
+    background:#fff;
+    border-radius:18px;
+
+    text-align:center;
+
+    border:1px solid #e8edf3;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+}
+
+#job-process .process-step:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.11);
+}
+
+#job-process .process-number{
+    width:64px;
+    height:64px;
+
+    margin:0 auto 22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--primary);
+    color:#fff;
+
+    font-size:24px;
+    font-weight:700;
+}
+
+#job-process .process-step h3{
+    color:var(--primary);
+    font-size:21px;
+    margin-bottom:14px;
+}
+
+#job-process .process-step p{
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #job-process .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #job-process{
+        padding:70px 0;
+    }
+
+    #job-process .process-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    #job-process .process-step{
+        min-height:auto;
+        padding:30px 24px;
+    }
+
+    #job-process .process-number{
+        width:56px;
+        height:56px;
+        font-size:21px;
+    }
+}
+/* ==========================================
+   JOBS - FINAL CALL TO ACTION
+========================================== */
+
+#job-cta{
+    padding:100px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0,86,166,.88),
+            rgba(0,86,166,.88)
+        ),
+        url("../Images/hero2.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+#job-cta .container{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+#job-cta .cta-box{
+    text-align:center;
+    color:#fff;
+}
+
+#job-cta .cta-box h2{
+    color:#fff;
+    font-size:clamp(2.4rem,5vw,4rem);
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+#job-cta .cta-box p{
+    max-width:760px;
+    margin:0 auto 35px;
+
+    color:rgba(255,255,255,.95);
+
+    font-size:18px;
+    line-height:1.8;
+}
+
+#job-cta .cta-box .btn{
+    width:auto;
+    min-width:190px;
+    padding:16px 32px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    #job-cta{
+        padding:75px 20px;
+        background-attachment:scroll;
+    }
+
+    #job-cta .cta-box h2{
+        font-size:2.3rem;
+    }
+
+    #job-cta .cta-box p{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    #job-cta .cta-box .btn{
+        width:100%;
+        max-width:280px;
+    }
+}
