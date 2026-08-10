@@ -1285,3 +1285,81 @@
         margin-bottom:12px;
     }
 }
+/* ==========================================
+   CANDIDATE REGISTRATION - MOBILE HERO
+========================================== */
+
+@media (max-width: 768px) {
+
+    .registration-header {
+        min-height: 420px;
+        height: 420px;
+        padding: 60px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .registration-header h1 {
+        font-size: clamp(46px, 12vw, 64px);
+        line-height: 1.05;
+        margin-bottom: 28px;
+    }
+
+    .registration-header p {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - MOBILE HERO FIX
+========================================== */
+
+@media (max-width:768px){
+
+    .page-header{
+        min-height:420px;
+        padding:70px 18px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        overflow:hidden;
+    }
+
+    .page-header .container{
+        width:100%;
+        max-width:100%;
+        padding:0;
+    }
+
+    .page-header h1{
+        font-size:clamp(44px,12vw,64px);
+        line-height:1.05;
+        margin-bottom:28px;
+        max-width:100%;
+        word-break:normal;
+        overflow-wrap:normal;
+    }
+
+    .page-header p{
+        font-size:20px;
+        line-height:1.45;
+        padding:0 8px;
+    }
+}
+
+@media (max-width:420px){
+
+    .page-header{
+        min-height:380px;
+        padding:55px 16px;
+    }
+
+    .page-header h1{
+        font-size:42px;
+    }
+
+    .page-header p{
+        font-size:17px;
+    }
+}
