@@ -4699,3 +4699,53 @@ body {
         max-width:280px;
     }
 }
+/* =========================================
+   SERVICES PAGE - FINAL MOBILE POLISH
+========================================= */
+
+@media (max-width: 576px) {
+
+    /* Reduce excessive section spacing */
+    .services-intro,
+    .recruitment-solutions,
+    .professionals-section,
+    .why-partner,
+    .faq-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    /* Professionals heading */
+    .professionals-section .section-title {
+        font-size: 36px;
+        line-height: 1.15;
+        margin-bottom: 22px;
+    }
+
+    .professionals-section .section-subtitle {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 45px;
+    }
+
+    /* Keep professional cards compact */
+    .professional-card {
+        padding: 38px 30px;
+    }
+
+    /* Tighten Why Partner cards */
+    .benefit-card {
+        padding: 38px 28px;
+        min-height: auto;
+    }
+
+    .benefits-grid {
+        gap: 28px;
+    }
+
+    /* FAQ spacing */
+    .faq-section .section-subtitle {
+        margin-bottom: 45px;
+    }
+
+}
