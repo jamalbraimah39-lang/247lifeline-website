@@ -466,3 +466,602 @@
     max-width:1200px;
     margin:0 auto;
 }
+/* ==========================================
+   CANDIDATE REGISTRATION - MOBILE PROGRESS
+========================================== */
+
+@media (max-width:768px){
+
+    .progress-section{
+        padding:35px 0 15px;
+    }
+
+    .progress-section .container{
+        width:100%;
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .progress-bar{
+        width:100%;
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:0;
+    }
+
+    .step{
+        flex:0 0 42px;
+        min-width:42px;
+        text-align:center;
+    }
+
+    .circle{
+        width:38px;
+        height:38px;
+        margin:0 auto 7px;
+        font-size:14px;
+    }
+
+    .step p{
+        font-size:10px;
+        line-height:1.2;
+        font-weight:600;
+        overflow-wrap:anywhere;
+    }
+
+    .line{
+        flex:1 1 auto;
+        min-width:8px;
+        height:3px;
+        margin:18px 3px 0;
+    }
+
+    .progress-text{
+        margin-top:18px;
+        font-size:15px;
+    }
+
+}
+@media (max-width:420px){
+
+    .step{
+        flex-basis:36px;
+        min-width:36px;
+    }
+
+    .circle{
+        width:34px;
+        height:34px;
+        font-size:13px;
+    }
+
+    .step p{
+        font-size:9px;
+    }
+
+    .line{
+        margin-left:2px;
+        margin-right:2px;
+        margin-top:16px;
+    }
+
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - FORM POLISH
+========================================== */
+
+.registration{
+    padding:70px 0 100px;
+}
+
+.form-card{
+    max-width:1100px;
+    margin:0 auto;
+
+    background:#fff;
+    padding:50px;
+
+    border-radius:22px;
+    border:1px solid #e8edf3;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:24px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:600;
+    color:#2f3742;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    min-height:52px;
+
+    padding:13px 15px;
+
+    border:1px solid #dce2e8;
+    border-radius:10px;
+
+    background:#fff;
+    color:#222;
+
+    font-family:inherit;
+    font-size:15px;
+
+    transition:.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    outline:none;
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(0,86,166,.12);
+}
+
+.form-step h2{
+    font-size:32px;
+    line-height:1.25;
+    color:var(--primary);
+    margin-bottom:12px;
+}
+
+.section-description{
+    max-width:800px;
+    margin-bottom:30px;
+    color:#6b7280;
+    line-height:1.75;
+}
+
+.button-area{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .registration{
+        padding:45px 0 70px;
+    }
+
+    .registration .container{
+        width:100%;
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .form-card{
+        padding:28px 20px;
+        border-radius:16px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .form-step h2{
+        font-size:26px;
+    }
+
+    .form-group input,
+    .form-group select{
+        min-height:50px;
+        font-size:16px;
+    }
+
+    .button-area{
+        flex-direction:column-reverse;
+        align-items:stretch;
+        gap:12px;
+        margin-top:30px;
+    }
+
+    .button-area .btn{
+        width:100%;
+    }
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - DOCUMENTS STEP
+========================================== */
+
+.document-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+}
+
+.document-card{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:22px;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.05);
+}
+
+.doc-header{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:16px;
+}
+
+.doc-header i{
+    flex:0 0 42px;
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:rgba(0,86,166,.10);
+    color:var(--primary);
+
+    font-size:20px;
+}
+
+.doc-header h4{
+    font-size:17px;
+    line-height:1.35;
+    margin:0 0 4px;
+}
+
+.doc-header small{
+    display:block;
+    color:#6b7280;
+    line-height:1.5;
+}
+
+.document-card input[type="file"],
+.upload-section input[type="file"]{
+    width:100%;
+    padding:12px;
+
+    border:1px dashed #aeb8c4;
+    border-radius:10px;
+
+    background:#f8fafc;
+    font-family:inherit;
+}
+
+/* ==========================================
+   COMPLIANCE FORMS PACK
+========================================== */
+
+.compliance-forms{
+    margin-top:50px;
+    padding-top:35px;
+    border-top:1px solid #e5e7eb;
+}
+
+.compliance-forms h3{
+    color:var(--primary);
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.form-download-card{
+    background:#f9fbfd;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+
+    padding:24px;
+    margin-bottom:20px;
+}
+
+.download-info{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:18px;
+}
+
+.download-info i{
+    flex:0 0 42px;
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:rgba(0,86,166,.10);
+    color:var(--primary);
+
+    font-size:20px;
+}
+
+.download-info h4{
+    font-size:18px;
+    line-height:1.35;
+    margin:0 0 5px;
+}
+
+.download-info p{
+    margin:0;
+    color:#6b7280;
+    line-height:1.6;
+}
+
+.form-download-card .btn{
+    width:auto;
+    min-width:150px;
+    padding:13px 24px;
+}
+
+.upload-section{
+    margin-top:18px;
+}
+
+.upload-section label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .document-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .document-card{
+        padding:18px;
+    }
+
+    .doc-header{
+        gap:12px;
+    }
+
+    .doc-header i{
+        flex-basis:38px;
+        width:38px;
+        height:38px;
+        font-size:18px;
+    }
+
+    .compliance-forms{
+        margin-top:40px;
+        padding-top:28px;
+    }
+
+    .compliance-forms h3{
+        font-size:24px;
+    }
+
+    .form-download-card{
+        padding:18px;
+    }
+
+    .download-info{
+        gap:12px;
+    }
+
+    .download-info i{
+        flex-basis:38px;
+        width:38px;
+        height:38px;
+        font-size:18px;
+    }
+
+    .form-download-card .btn{
+        width:100%;
+    }
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - REFERENCES
+========================================== */
+
+.reference-card{
+    position:relative;
+
+    background:#f9fbfd;
+    border:1px solid #e3e9ef;
+    border-radius:16px;
+
+    padding:30px;
+    margin-bottom:28px;
+
+    transition:box-shadow .25s ease,
+               border-color .25s ease;
+}
+
+.reference-card:hover{
+    border-color:#cbd8e5;
+    box-shadow:0 12px 30px rgba(0,0,0,.07);
+}
+
+.reference-card h3{
+    color:var(--primary);
+
+    font-size:21px;
+    font-weight:700;
+
+    margin:0 0 24px;
+    padding-bottom:14px;
+
+    border-bottom:1px solid #e3e9ef;
+}
+
+/* Keep reference fields balanced */
+
+.reference-card .form-grid{
+    gap:20px 24px;
+}
+
+/* Make textarea match other inputs if references use one */
+
+.reference-card textarea{
+    width:100%;
+    min-height:120px;
+
+    padding:13px 15px;
+
+    border:1px solid #dce2e8;
+    border-radius:10px;
+
+    background:#fff;
+    color:#222;
+
+    font-family:inherit;
+    font-size:15px;
+
+    resize:vertical;
+    box-sizing:border-box;
+
+    transition:.25s ease;
+}
+
+.reference-card textarea:focus{
+    outline:none;
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(0,86,166,.12);
+}
+
+
+/* ==========================================
+   MOBILE REFERENCES
+========================================== */
+
+@media (max-width:768px){
+
+    .reference-card{
+        padding:22px 18px;
+        margin-bottom:22px;
+        border-radius:14px;
+    }
+
+    .reference-card h3{
+        font-size:19px;
+        margin-bottom:20px;
+    }
+
+    .reference-card .form-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .reference-card textarea{
+        font-size:16px;
+    }
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - REVIEW & SUBMIT
+========================================== */
+
+.review-box{
+    background:#f9fbfd;
+
+    border:1px solid #e3e9ef;
+    border-left:5px solid var(--primary);
+
+    padding:32px;
+    margin-top:28px;
+
+    border-radius:14px;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.06);
+}
+
+.review-box p{
+    margin:0 0 14px;
+
+    font-size:16px;
+    line-height:1.7;
+
+    color:#374151;
+}
+
+.review-box p:last-child{
+    margin-bottom:0;
+}
+
+.review-box strong{
+    color:#1f2937;
+}
+
+
+/* ==========================================
+   FINAL SUBMIT AREA
+========================================== */
+
+.form-step:last-child .button-area{
+    margin-top:35px;
+    padding-top:25px;
+
+    border-top:1px solid #e5e7eb;
+}
+
+.form-step:last-child .button-area .btn{
+    min-width:170px;
+}
+
+
+/* Make the final submit button stand out */
+
+.form-step:last-child .button-area .btn-primary{
+    padding:15px 30px;
+
+    font-size:16px;
+    font-weight:700;
+
+    box-shadow:0 8px 20px rgba(0,86,166,.20);
+}
+
+
+/* ==========================================
+   MOBILE REVIEW
+========================================== */
+
+@media (max-width:768px){
+
+    .review-box{
+        padding:22px 18px;
+        margin-top:22px;
+
+        border-left-width:4px;
+        border-radius:12px;
+    }
+
+    .review-box p{
+        font-size:15px;
+        line-height:1.65;
+        overflow-wrap:anywhere;
+    }
+
+    .form-step:last-child .button-area{
+        margin-top:28px;
+        padding-top:22px;
+    }
+
+    .form-step:last-child .button-area .btn{
+        width:100%;
+    }
+}
