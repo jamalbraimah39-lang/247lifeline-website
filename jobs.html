@@ -25,7 +25,6 @@
 <body>
 
 <header>
-
     <nav class="navbar">
 
         <div class="logo">
@@ -34,31 +33,32 @@
             </a>
         </div>
 
-        <ul class="nav-links">
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="jobs.html" class="active">Jobs</a></li>
+            <li><a href="candidate-registration.html">Candidates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-    <li><a href="index.html">Home</a></li>
-
-    <li><a href="about.html">About</a></li>
-
-    <li><a href="services.html">Services</a></li>
-
-    <li><a href="jobs.html" class="active">Jobs</a></li>
-
-    <li><a href="candidate-registration.html">Candidates</a></li>
-
-    <li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-        <a href="candidate-registration.html" class="btn">
-
+        <a href="candidate-registration.html" class="btn nav-apply">
             Apply Now
-
         </a>
 
     </nav>
-
 </header>
 <!-- ==========================================
      PAGE BANNER
@@ -272,11 +272,7 @@
         <span id="resultsText">
             Showing 1–12 of 272 jobs
         </span>
-<div class="jobs-results">
 
-    <p id="resultsText"></p>
-
-</div>
     </div>
 
     <div class="jobs-sort">

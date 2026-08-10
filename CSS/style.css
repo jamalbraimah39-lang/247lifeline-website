@@ -4749,3 +4749,502 @@ body {
     }
 
 }
+/* ==========================================
+   JOBS - SEARCH & FILTERS
+========================================== */
+
+#job-search{
+    padding:60px 0;
+    background:#f8f9fa;
+}
+
+#job-search .search-box{
+    display:grid;
+    grid-template-columns:2fr 1.25fr 1.25fr 1fr auto;
+    gap:16px;
+    align-items:center;
+
+    background:#fff;
+    padding:28px;
+    border-radius:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+#job-search input,
+#job-search select{
+    width:100%;
+    min-height:52px;
+
+    padding:0 16px;
+
+    border:1px solid #dfe5ec;
+    border-radius:10px;
+
+    background:#fff;
+    font-family:inherit;
+    font-size:15px;
+
+    outline:none;
+}
+
+#job-search input:focus,
+#job-search select:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(0,86,166,.10);
+}
+
+#job-search #searchBtn{
+    min-height:52px;
+    padding:0 28px;
+    width:auto;
+    white-space:nowrap;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #job-search .search-box{
+        grid-template-columns:1fr 1fr;
+    }
+
+    #job-search #jobSearch{
+        grid-column:1 / -1;
+    }
+
+    #job-search #searchBtn{
+        width:100%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #job-search{
+        padding:40px 0;
+    }
+
+    #job-search .search-box{
+        grid-template-columns:1fr;
+        padding:20px;
+        gap:14px;
+    }
+
+    #job-search #jobSearch{
+        grid-column:auto;
+    }
+
+    #job-search input,
+    #job-search select,
+    #job-search #searchBtn{
+        width:100%;
+        min-height:50px;
+    }
+}
+/* ==========================================
+   JOBS - RESULTS TOOLBAR
+========================================== */
+
+#featured-jobs .jobs-toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+
+    margin:0 0 35px;
+    padding:22px 24px;
+
+    background:#f8fafc;
+    border:1px solid #e6ebf1;
+    border-radius:14px;
+}
+
+#featured-jobs .jobs-count{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+#featured-jobs .jobs-count strong{
+    color:var(--primary);
+    font-size:24px;
+}
+
+#featured-jobs #resultsText{
+    color:#666;
+    font-size:14px;
+}
+
+#featured-jobs .jobs-sort{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#featured-jobs .jobs-sort label{
+    font-weight:600;
+    color:var(--dark);
+}
+
+#featured-jobs .jobs-sort select{
+    min-height:44px;
+    padding:0 14px;
+
+    border:1px solid #dfe5ec;
+    border-radius:9px;
+
+    background:#fff;
+    font-family:inherit;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #featured-jobs .jobs-toolbar{
+        flex-direction:column;
+        align-items:stretch;
+        padding:18px;
+        gap:18px;
+    }
+
+    #featured-jobs .jobs-count{
+        text-align:left;
+    }
+
+    #featured-jobs .jobs-sort{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    #featured-jobs .jobs-sort select{
+        width:100%;
+    }
+}
+/* ==========================================
+   JOBS - JOB CARDS
+========================================== */
+
+#featured-jobs .jobs-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+#featured-jobs .job-card{
+    background:#fff;
+    padding:28px;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+    min-height:360px;
+
+    border:1px solid #e8edf3;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+    transition:.3s ease;
+}
+
+#featured-jobs .job-card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+#featured-jobs .job-type{
+    display:inline-block;
+
+    padding:7px 14px;
+    margin-bottom:18px;
+
+    border-radius:30px;
+
+    background:rgba(0,86,166,.10);
+    color:var(--primary);
+
+    font-size:13px;
+    font-weight:600;
+}
+
+#featured-jobs .job-card h3{
+    color:var(--primary);
+    font-size:22px;
+    line-height:1.35;
+    margin-bottom:18px;
+}
+
+#featured-jobs .job-card p{
+    margin:7px 0;
+    color:var(--text);
+    line-height:1.6;
+}
+
+#featured-jobs .job-card i{
+    width:22px;
+    color:var(--primary);
+}
+
+#featured-jobs .job-card .btn{
+    margin-top:auto;
+    width:100%;
+    padding:14px 20px;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #featured-jobs .jobs-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #featured-jobs .jobs-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    #featured-jobs .job-card{
+        min-height:auto;
+        padding:24px 20px;
+    }
+
+    #featured-jobs .job-card h3{
+        font-size:20px;
+    }
+}
+/* ==========================================
+   JOBS - PAGINATION
+========================================== */
+
+#featured-jobs .pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+#featured-jobs .pagination button{
+    min-width:44px;
+    height:44px;
+    padding:0 13px;
+
+    border:1px solid #dfe5ec;
+    border-radius:9px;
+
+    background:#fff;
+    color:var(--dark);
+
+    font-family:inherit;
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+#featured-jobs .pagination button:hover{
+    background:var(--primary);
+    border-color:var(--primary);
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+#featured-jobs .pagination button.active{
+    background:var(--primary);
+    border-color:var(--primary);
+    color:#fff;
+}
+
+#featured-jobs .pagination button:disabled{
+    opacity:.45;
+    cursor:not-allowed;
+    transform:none;
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #featured-jobs .pagination{
+        gap:6px;
+        margin-top:35px;
+    }
+
+    #featured-jobs .pagination button{
+        min-width:38px;
+        height:38px;
+        padding:0 10px;
+        font-size:13px;
+    }
+}
+/* ==========================================
+   JOBS - CATEGORIES
+========================================== */
+
+#job-categories{
+    padding:100px 0;
+    background:#f8f9fa;
+}
+
+#job-categories .category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+#job-categories .category-card{
+    min-height:250px;
+    padding:38px 28px;
+
+    background:#fff;
+    border-radius:18px;
+
+    text-align:center;
+
+    border:1px solid #e8edf3;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+    transition:.3s ease;
+}
+
+#job-categories .category-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+#job-categories .category-card i{
+    font-size:42px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+#job-categories .category-card h3{
+    color:var(--primary);
+    font-size:21px;
+    margin-bottom:14px;
+}
+
+#job-categories .category-card p{
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #job-categories .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #job-categories{
+        padding:70px 0;
+    }
+
+    #job-categories .category-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    #job-categories .category-card{
+        min-height:auto;
+        padding:30px 24px;
+    }
+}
+/* ==========================================
+   JOBS - CANDIDATE BENEFITS
+========================================== */
+
+#candidate-benefits{
+    padding:100px 0;
+    background:#fff;
+}
+
+#candidate-benefits .benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+#candidate-benefits .benefit-card{
+    min-height:250px;
+    padding:38px 28px;
+
+    background:#f8f9fa;
+    border-radius:18px;
+
+    text-align:center;
+
+    border:1px solid #e8edf3;
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+}
+
+#candidate-benefits .benefit-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.11);
+}
+
+#candidate-benefits .benefit-card i{
+    font-size:40px;
+    color:var(--primary);
+    margin-bottom:18px;
+}
+
+#candidate-benefits .benefit-card h3{
+    color:var(--primary);
+    font-size:21px;
+    margin-bottom:14px;
+}
+
+#candidate-benefits .benefit-card p{
+    color:var(--text);
+    line-height:1.8;
+}
+
+/* TABLET */
+
+@media (max-width:992px){
+
+    #candidate-benefits .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:576px){
+
+    #candidate-benefits{
+        padding:70px 0;
+    }
+
+    #candidate-benefits .benefits-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    #candidate-benefits .benefit-card{
+        min-height:auto;
+        padding:30px 24px;
+    }
+}
