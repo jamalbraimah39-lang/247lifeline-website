@@ -1128,3 +1128,160 @@
         font-size: 17px;
     }
 }
+/* ==========================================
+   CANDIDATE REGISTRATION - HERO MOBILE FIX
+========================================== */
+
+@media (max-width:768px){
+
+    .page-header{
+        padding:75px 16px;
+        overflow:hidden;
+    }
+
+    .page-header h1{
+        font-size:38px;
+        line-height:1.15;
+        margin-bottom:18px;
+        padding:0;
+        max-width:100%;
+        overflow-wrap:normal;
+        word-break:normal;
+    }
+
+    .page-header p{
+        font-size:17px;
+        line-height:1.5;
+        padding:0 10px;
+    }
+}
+
+@media (max-width:420px){
+
+    .page-header h1{
+        font-size:34px;
+    }
+
+    .page-header p{
+        font-size:15px;
+    }
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - COMPLIANCE FORMS MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .form-download-card{
+        padding:18px;
+        margin-bottom:16px;
+        border-radius:14px;
+    }
+
+    .download-info{
+        display:grid;
+        grid-template-columns:40px 1fr;
+        gap:12px;
+        align-items:start;
+        margin-bottom:16px;
+    }
+
+    .download-info i{
+        width:40px;
+        height:40px;
+        font-size:18px;
+        margin:0;
+    }
+
+    .download-info h4{
+        font-size:18px;
+        line-height:1.3;
+        margin-bottom:5px;
+    }
+
+    .download-info p{
+        font-size:14px;
+        line-height:1.5;
+        margin:0;
+    }
+
+    .form-download-card .btn{
+        width:100%;
+        min-width:0;
+        padding:12px 18px;
+        margin-bottom:14px;
+    }
+
+    .upload-section{
+        margin-top:0;
+    }
+
+    .upload-section label{
+        font-size:14px;
+        margin-bottom:7px;
+    }
+
+    .upload-section input[type="file"]{
+        padding:10px;
+        font-size:14px;
+    }
+}
+/* ==========================================
+   CANDIDATE REGISTRATION - FINAL MOBILE POLISH
+========================================== */
+
+@media (max-width:768px){
+
+    /* Reference cards */
+    .reference-card{
+        padding:20px 16px;
+        margin-bottom:20px;
+        border-radius:14px;
+    }
+
+    .reference-card h3{
+        font-size:20px;
+        margin-bottom:18px;
+        padding-bottom:12px;
+    }
+
+    .reference-card .form-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    /* Form navigation buttons */
+    .button-area{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:12px;
+        margin-top:28px;
+    }
+
+    #prevBtn,
+    #nextBtn,
+    #submitBtn{
+        width:100%;
+        min-width:0;
+        min-height:52px;
+        padding:14px 20px;
+        font-size:16px;
+    }
+
+    #prevBtn{
+        order:2;
+    }
+
+    #nextBtn,
+    #submitBtn{
+        order:1;
+    }
+
+    /* Error message */
+    .form-error{
+        font-size:14px;
+        line-height:1.5;
+        margin-top:16px;
+        margin-bottom:12px;
+    }
+}
