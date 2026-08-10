@@ -1065,3 +1065,66 @@
         width:100%;
     }
 }
+/* ==========================================
+   CANDIDATE REGISTRATION MOBILE FIXES
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Hero title */
+    .page-hero h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        padding: 0 20px;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .page-hero p {
+        padding: 0 20px;
+    }
+
+
+    /* Progress section */
+    .progress-section {
+        padding: 35px 15px 20px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        width: 100%;
+        gap: 4px;
+        align-items: flex-start;
+    }
+
+    .step {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .circle {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .step p {
+        font-size: 10px;
+        line-height: 1.25;
+        text-align: center;
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+    .line {
+        margin: 18px 2px 0;
+        min-width: 5px;
+        height: 3px;
+    }
+
+    .progress-text {
+        margin-top: 22px;
+        font-size: 17px;
+    }
+}
