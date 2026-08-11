@@ -1363,3 +1363,53 @@
         font-size:17px;
     }
 }
+/* ==========================================
+   CANDIDATE REGISTRATION - PROGRESS POLISH
+========================================== */
+
+@media (max-width:768px){
+
+    .progress-bar{
+        gap:2px;
+    }
+
+    .step{
+        min-width:0;
+    }
+
+    .step p{
+        font-size:9px;
+        line-height:1.15;
+        max-width:52px;
+        margin:0 auto;
+    }
+
+    .circle{
+        width:36px;
+        height:36px;
+        font-size:13px;
+    }
+
+    .line{
+        margin:17px 1px 0;
+        min-width:4px;
+    }
+
+    .progress-text{
+        margin-top:20px;
+        font-size:16px;
+    }
+}
+
+@media (max-width:420px){
+
+    .step p{
+        font-size:8px;
+        max-width:46px;
+    }
+
+    .circle{
+        width:34px;
+        height:34px;
+    }
+}
