@@ -1,19 +1,20 @@
 const slides = document.querySelectorAll(".slide");
 
-let current = 0;
+if (slides.length > 0) {
 
-setInterval(() => {
+    let current = 0;
 
-    slides[current].classList.remove("active");
+    setInterval(() => {
 
-    current++;
+        slides[current].classList.remove("active");
 
-    if(current >= slides.length){
+        current++;
 
-        current = 0;
+        if (current >= slides.length) {
+            current = 0;
+        }
 
-    }
+        slides[current].classList.add("active");
 
-    slides[current].classList.add("active");
-
-},5000);
+    }, 5000);
+}
