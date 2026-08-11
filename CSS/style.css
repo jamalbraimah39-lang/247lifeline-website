@@ -6004,3 +6004,94 @@ body {
         max-width:280px;
     }
 }
+/* ==========================================
+   CONTACT PAGE - HERO BANNER
+========================================== */
+
+.page-banner{
+    position:relative;
+    min-height:420px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            rgba(0, 54, 105, .78),
+            rgba(0, 86, 166, .72)
+        ),
+        url("../Images/hero5.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.page-banner .container{
+    position:relative;
+    z-index:2;
+
+    max-width:850px;
+    padding:70px 20px;
+}
+
+.page-banner h1{
+    color:#fff;
+
+    font-size:clamp(2.7rem, 6vw, 4.5rem);
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    font-weight:800;
+}
+
+.page-banner p{
+    max-width:760px;
+    margin:0 auto;
+
+    color:rgba(255,255,255,.95);
+
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .page-banner{
+        min-height:350px;
+        background-position:center;
+    }
+
+    .page-banner .container{
+        padding:60px 20px;
+    }
+
+    .page-banner h1{
+        font-size:2.6rem;
+    }
+
+    .page-banner p{
+        font-size:16px;
+        line-height:1.7;
+    }
+}
+/* ==========================================
+   CONTACT - CLICKABLE DETAILS
+========================================== */
+
+#contact-info .contact-card a{
+    color:#5f6772;
+    text-decoration:none;
+    transition:.25s ease;
+}
+
+#contact-info .contact-card a:hover{
+    color:var(--primary);
+}

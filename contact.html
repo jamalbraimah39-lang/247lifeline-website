@@ -210,17 +210,19 @@
 
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xjybwjod" method="POST">
 
                 <div class="form-row">
 
                     <input
                         type="text"
+                        name="name"
                         placeholder="Full Name"
                         required>
 
                     <input
                         type="email"
+                        name="email"
                         placeholder="Email Address"
                         required>
 
@@ -230,23 +232,24 @@
 
                     <input
                         type="tel"
+                        name="phone"
                         placeholder="Phone Number">
 
                     <input
                         type="text"
+                        name="subject"
                         placeholder="Subject">
 
                 </div>
 
                 <textarea
+                    name="message"
                     rows="7"
                     placeholder="Type your message here..."
                     required></textarea>
 
-                <button class="btn">
-
-                    Send Message
-
+                <button type="submit" class="btn">
+                     Send Message
                 </button>
 
             </form>
@@ -360,6 +363,8 @@
 
                 <li><a href="jobs.html">Jobs</a></li>
 
+                <li><a href="candidate-registration.html">Candidates</a></li>
+
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
@@ -370,9 +375,9 @@
 
             <h3>Contact</h3>
 
-            <p>Email: info@247lifeline.com</p>
+            <p><a href="mailto:info@247lifeline.co.uk">Email: info@247lifeline.co.uk</a></p>
 
-            <p>Phone: +44 345 257 0911</p>
+            <p><a href="tel:+443452570911">Phone: +44 345 257 0911</a></p>
 
             <p>United Kingdom</p>
 
